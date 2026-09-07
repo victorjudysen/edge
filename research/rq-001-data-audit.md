@@ -1,6 +1,6 @@
 # RQ-001 — Data and Licensing Audit
 
-- Status: Preliminary audit; no source approved for acquisition or final testing
+- Status: Path A selected for further review; no source approved for acquisition or final testing
 - Last updated: 2026-09-07
 - Research question: RQ-001
 
@@ -39,6 +39,16 @@ described only as “pre-closing.” The latter cannot automatically be used as 
 | Understat xG | Possible supplementary expected-goals feature | The seeded literature identifies Understat as an xG source, but this audit did not establish a stable official bulk-data access method, historical snapshot policy, or timestamped availability suitable for leakage-safe reconstruction. | Terms and redistribution rights remain unresolved. | **Not approved.** Do not scrape, download, or depend on it without a licensing and access review. |
 
 ## Findings
+
+### 0. Sample inspection status
+
+On 2026-09-07, a permitted 8 KB request was attempted against the public
+2023/24 Premier League CSV endpoint to verify the header and a few rows without
+retrieving the full file. The host returned a temporary-unavailable HTML page
+instead of CSV content. The same endpoint could not be inspected through the
+browser fetcher. This means the audit has **not** verified the actual column
+names, row shape, or closing-column values from a file sample. No claim about
+those details is being made from this failed request.
 
 ### 1. Football-Data is useful but does not yet satisfy the full design
 
@@ -120,7 +130,8 @@ approval before any account, purchase, or download.
 If neither source path is acceptable, record the data gate as failed and do not
 force a model comparison using retrospective or poorly timed odds.
 
-Path A is the smallest low-cost next step. It would answer a narrower question:
+Path A is now the selected low-cost next step, subject to the unresolved source
+and licensing checks above. It would answer a narrower question:
 whether simple models add information beyond a reproducibly constructed closing
 market, not whether they improve an earlier betting decision.
 
@@ -161,8 +172,9 @@ that the effects are achievable.
 
 ## Conclusion classification
 
-**Further Study Required.** The source audit has identified a promising closing
-benchmark candidate but has not established a complete, legally reusable,
-time-matched dataset for the current RQ-001 design. No model, provider,
-architecture, paid subscription, or betting decision is approved.
-
+**Further Study Required.** Path A has been selected for further review, but the
+source audit has not established a complete, legally reusable, time-matched
+dataset for the original RQ-001 design, and the file-level sample inspection
+was unavailable because the source endpoint returned a temporary-unavailable
+page. No model, provider, architecture, paid subscription, or betting decision
+is approved.
