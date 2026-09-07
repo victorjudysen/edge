@@ -58,3 +58,40 @@ RQ-001 is complete when:
 4. Supporting and challenging literature was assessed without excluding adverse findings.
 5. Data limitations, licensing constraints, and reproducibility status were recorded.
 6. The evidence supports one permitted conclusion—Accepted, Rejected, Inconclusive, or Further Study Required—without implying automatic architecture approval.
+
+## RQ-002 — Tennis Market Baseline
+
+**Status:** Proposed
+
+### Question
+
+Across a pre-specified set of ATP Tour-level men's singles matches, seasons,
+surfaces, prediction timestamps, and pre-match match-winner markets, do
+statistical or probabilistic tennis models provide statistically and practically
+meaningful incremental out-of-sample predictive information beyond margin-free
+consensus bookmaker probabilities, using closing prices as the primary market
+benchmark under leakage-free walk-forward evaluation?
+
+### Why it matters
+
+Tennis has a different structure from football: there are two match-winner
+outcomes, player-level rather than team-level strength, surface effects, travel,
+rest, withdrawals, retirements, and best-of-three versus best-of-five formats.
+The football research cannot be transferred without testing whether its
+assumptions still make sense.
+
+### Competing hypotheses
+
+- **H0 — Market sufficiency:** No tested tennis model provides a repeatable,
+  practically meaningful improvement over the closing market or contributes
+  useful incremental information when combined with it.
+- **H1 — General incremental information:** At least one pre-specified tennis
+  model improves on the closing market by the registered statistical and
+  practical thresholds, with stability across the full primary scope.
+- **H2 — Conditional incremental information:** Incremental information meets
+  the same thresholds only in a condition registered before final testing, such
+  as surface, tournament tier, player ranking band, or prediction horizon.
+
+The hypotheses and thresholds are operationalized in
+`research/rq-002-tennis-scope.md`. RQ-002 does not approve a model, data
+provider, architecture, or betting decision.
