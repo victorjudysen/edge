@@ -1,6 +1,6 @@
 # RQ-002 — Tennis Data and Licensing Audit
 
-- Status: Preliminary audit; no source or subscription approved
+- Status: Path A selected; no source or subscription approved
 - Last updated: 2026-09-07
 - Research question: RQ-002
 
@@ -74,6 +74,9 @@ Use Jeff Sackmann’s data to study player-strength forecasting without claiming
 that the model adds information beyond bookmaker closing prices. This would no
 longer be the full RQ-002 market-baseline question.
 
+**Selected by Victor on 2026-09-08.** The bounded study is documented in
+`research/rq-002-free-results-protocol.md`.
+
 ### Path B — Paid, narrow market study
 
 Approve a paid historical-odds evaluation and restrict the sample to tournaments
@@ -85,8 +88,8 @@ question but would not support the original ATP-wide scope.
 Keep RQ-002 proposed and wait for a source with complete, licensed ATP match
 winner odds and closing snapshots before building a dataset or model.
 
-No path is selected by this audit. No account, purchase, API key, or dataset
-acquisition has been made.
+Path A is selected. No account, purchase, API key, or dataset acquisition has
+been made.
 
 ## Reproducibility and licensing gates
 
@@ -104,8 +107,8 @@ Before any data acquisition:
 
 ## Conclusion classification
 
-**Further Study Required.** Free results and rankings appear available, but no
-reviewed source currently provides a complete, licensed closing bookmaker market
-for the proposed ATP-wide 2017–2024 scope. No tennis model, provider,
-subscription, architecture, deployment, or betting decision is approved.
-
+**Further Study Required.** The free results-only path is selected for learning
+and player-strength research. It cannot answer whether a model adds information
+beyond bookmaker closing prices, because no closing-odds source is included.
+No tennis model, provider, subscription, architecture, deployment, or betting
+decision is approved.
